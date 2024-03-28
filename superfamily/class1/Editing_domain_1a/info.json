@@ -1,9 +1,0 @@
-{
-    "fullName":"Editing domain 1a",
-    "class":"Class I",
-	"hide": true,
-    "icon":"/fig/icon_hydrophobic.png",
-	"tree": "/data/Edit_1a.nexus",
-	"fullTree": true,
-	"treeDescription": "Phylogeny of the editing domain 1a. Internal nodes are labelled by clade posterior support."
-}

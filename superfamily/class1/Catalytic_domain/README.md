@@ -1,1 +1,0 @@
-The catalytic domain of the Class I aminoacyl-tRNA synthetase (AARS-I) activates amino acids so that their cognate tRNA can be charged. 
