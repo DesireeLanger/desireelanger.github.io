@@ -1,0 +1,5 @@
+structures/1b35A.pdb
+structures/1bbt2.pdb
+structures/1bev2.pdb
+structures/1d4m2.pdb
+structures/1mec1.pdb

@@ -43,6 +43,9 @@ for (f in dssp.files){
 	for (i in 1:nsites){
 
 
+		#print(i)
+
+
 		# If gap, then skip
 		aln.char = toupper(fasta.seq[i])
 		if (length(aln.char) == 0){
@@ -65,6 +68,9 @@ for (f in dssp.files){
 
 			# If there is a region of missing residues in the pdb structrue then an extra line with '!' is inserted into the dssp file
 			res = substr(line, 14, 14)
+			if (is.na(res)){
+				res = "X"
+			}
 			if (res == "!"){
 				line = dssp[dssp.pos]
 				dssp.pos = dssp.pos + 1
@@ -83,6 +89,9 @@ for (f in dssp.files){
 			}
 
 			sse = substr(line, 17, 17)
+			if (is.na(sse)){
+				sse = " "
+			}
 			if (sse == " ") sse = "N"
 
 		}
