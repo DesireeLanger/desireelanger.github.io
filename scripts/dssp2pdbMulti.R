@@ -1,3 +1,4 @@
+if (!require(stringr, quietly = T)) install.packages("stringr")
 library(stringr)
 
 
