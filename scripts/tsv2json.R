@@ -1,4 +1,6 @@
+if (!require(rjson, quietly = T)) install.packages("rjson")
 library(rjson)
+if (!require(Biostrings, quietly = T)) install.packages("Biostrings")
 library(Biostrings)
 
 
