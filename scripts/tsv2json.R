@@ -1,6 +1,7 @@
 if (!require(rjson, quietly = T)) install.packages("rjson")
 library(rjson)
-if (!require(Biostrings, quietly = T)) install.packages("Biostrings")
+if (!require("BiocManager", quietly = TRUE))install.packages("BiocManager")
+BiocManager::install("Biostrings")
 library(Biostrings)
 
 
