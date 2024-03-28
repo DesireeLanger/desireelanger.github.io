@@ -1,4 +1,6 @@
+if (!require(seqinr, quietly = T)) install.packages("seqinr")
 library(seqinr)
+
 
 
 
