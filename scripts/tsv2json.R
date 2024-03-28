@@ -1,5 +1,8 @@
+if (!require(rjson, quietly = T)) install.packages("rjson")
 library(rjson)
-library(Biostrings)
+#if (!require("BiocManager", quietly = TRUE))install.packages("BiocManager")
+#BiocManager::install("Biostrings")
+#library(Biostrings)
 
 
 
@@ -16,7 +19,7 @@ if (!any(colnames(in.df) == idCol)){
 }
 
 
-translate.seqs = any(colnames(in.df) == "sequence") & any(colnames(in.df) == "transl_table")
+translate.seqs = FALSE# any(colnames(in.df) == "sequence") & any(colnames(in.df) == "transl_table")
 if (translate.seqs){
 	in.df$proteinSeq = ""
 }
